@@ -1,0 +1,17 @@
+//o metodo includes serve opara buscar um item
+//no array e se encontrar retorna true se não retorna false
+let lista = ["ovo", "café", "arroz", "feijão", "macarrão"];
+console.log(lista.includes("ovo"))
+->true
+//serve também para buscar em uma string, no exemplo 
+//abaixo, retornou false pois o b que o includes
+//buscava era nminusculo
+let nome = "Bonieky";
+console.log(nome.includes("b");
+->false
+--'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+//repeat serve para repetir itens, usa-se passando a quantidade de 
+//vezes que se quer repetir
+let nome = "Bonieky";
+console.log(nome.repeat(3));
+->BoniekyBoniekyBonieky

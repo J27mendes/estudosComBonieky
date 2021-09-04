@@ -1,0 +1,102 @@
+let pessoa = {
+nome: "Bonieky",
+sobrenome: "Lacerda",
+idade: 90,
+social:{
+  facebook: "b7web",
+  instagram: "bonieky",
+},
+nomeCompleto: function(){
+  return `${this.nome} ${this.sobrenome}`
+}
+};
+// para selecionar itens dentro dos objetos 
+let { facebook, instagram } = pessoa.social;
+
+console.log(facebook, instagram);
+
+let { nome, idade, social:{instagram} } = pessoa.social;
+console.log(nome, idade, instagram);
+
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+
+let pessoa = {
+nome: "Bonieky",
+sobrenome: "Lacerda",
+idade: 90,
+social:{
+  facebook: "b7web",
+  instagram:{
+     url:"bonieky",
+     seguidores: 1000
+  }
+},
+nomeCompleto: function(){
+  return `${this.nome} ${this.sobrenome}`
+ }
+};
+// para selecionar itens dentro dos objetos 
+let { nome, idade, social:{instagram:{url:instagram, seguidores}} } = pessoa.social;
+console.log(nome, idade, instagram, seguidores);
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+
+let pessoa = {
+nome: "Bonieky",
+sobrenome: "Lacerda",
+idade: 90,
+social:{
+  facebook: "b7web",
+  instagram:{
+     url:"bonieky",
+     seguidores: 1000
+  }
+ }
+};
+
+function pegarNomeCompleto(obj){
+  return obj.nome + ' ' + obj.sobrenome;
+}
+
+console.log(pegarNomeCompleto(pessoa));
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+
+function pegarNomeCompleto(obj){
+ let nome = obj.nome;
+ let sobrenome = obj.sobrenome;
+ 
+  return `${nome} ${sobrenome}; 
+
+console.log(pegarNomeCompleto(pessoa));
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-
+
+function pegarNomeCompleto({nome, sobrenome}){
+
+  return `${nome} ${sobrenome}; 
+
+console.log(pegarNomeCompleto(pessoa));
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+//caso o sobrenome não tivesse sido passado, é possível
+//passa-lo como parametro
+function pegarNomeCompleto({nome, sobrenome= 'Silva', social:{instagram:{url:instagram}}}){
+
+  return `${nome} ${sobrenome} (Siga em ${instagram})`;
+} 
+
+console.log(pegarNomeCompleto(pessoa));
+
+
+
+
+
+
+
+
+
+
+
+
+
+

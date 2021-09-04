@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina</title>
+  <link rel="stylesheet" href"estilo.css" />
+</head>
+<body>
+  <input type="file" multiple id="arquivo" />
+  <button onclick="enviar()">Enviar</button>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'--'-'-
+JS
+async function enviar(){
+  let arquivo = document.getElementById('arquivo').files[0];
+  
+  let body = new FormData();
+  body.append('title', 'Bla bla bla');
+  body.append('arquivo', arquivo);
+
+  let req await fetch(''https://www.meusite.com.br/upload',{
+     method: 'POST',
+     body: body,
+     headers: {
+       'Content-Type': 'multipart/form-data'
+}
+});
+
+}
+

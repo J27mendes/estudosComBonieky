@@ -1,0 +1,44 @@
+json
+javascript object notation
+
+let pessoa = {nome:"Bonieky", idade:60};
+console.log(pessoa.nome)
+->"Bonieky"
+
+-'-'-'-'-'-'-'-'-'-'-'-'
+
+let pessoa = {nome:"Bonieky", 
+idade: 60, 
+caracteristicas:{
+peso: 50, 
+altura:150}};
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+//o parse pega a string e transforma em objeto JSON utilizavel
+let pessoa = '{"nome":"Bonieky","idade":90}'
+
+let pessoa = JSON.parse('{"nome":"Bonieky","idade":90}');
+
+console.log(pessoa.nome)
+->undefined
+console.log(pessoa)
+->'{"nome":"Bonieky","idade":90}'  // uma string
+
+pessoa = JSON.parse(pessoa)
+->{nome:"Bonieky", idade:90}
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+
+//o stringify transforma o objeto JSON em string
+let resultado = {
+lista:[
+'bonieky',
+'bonieky lacerda',
+'legal'
+]
+};
+
+JSON.stringify(resultado)
+->'{"lista":["bonieky", "bonieky lacerda", "legal"]}'
+let res = '{"lista":["bonieky", "bonieky lacerda", "legal"]}';
+let resJson = JSON.parse(res);

@@ -1,0 +1,27 @@
+//função que arredonda o valor dependendo dele
+let novoValor = Math.round(3.67);
+
+//função que gera o numero PI
+let novoValor = Math.PI();
+
+//função que arredonda para baixo
+let novoValor = Math.floor(3.99);
+
+//função que arredonda para a cima
+let novoValor = Math.ceil(3.01);
+
+//função que gera a o numero abssoluto
+let novoValor = Math.abs(-9.587846);
+
+//função que retorna o menor numero passado
+let novoValor = Math.min(7, 100, 54 , 87, 2);
+
+//função que retorna o maior numero passado
+let novoValor = Math.max(7, 100, 54 , 87, 2);
+
+//função que retorna um numero aleatorio entre 0 e 1
+let novoValor = Math.randon();
+
+//para gerar um numero aleatorio entre 0 e 100
+//e arredondando para baixo usando uma combinação de funções
+let novoValor = Math.floor(Math.randon() * 100); 

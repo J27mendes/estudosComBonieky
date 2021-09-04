@@ -1,0 +1,30 @@
+let nome = 'Bonieky'
+let idade= 45
+//templates string usa `${}` para trazer as variaveis
+let frase = `Meu nome é ${nome}, e eu temho ${idade} anos e ano que vem co
+completo ${idade + 1}`
+
+console.log(frase);
+
+--'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+let pessoa = {
+nome: 'Bonieky',
+sobrenome:'Lacerda',
+idade: 90,
+social: {
+facebook: 'b7web',
+instagram:'bonieky'
+},
+nomeCompleto: function(){
+return ´${this.nome} ${this.sobrenome}`
+  }
+};
+
+/let {nome, sobrernome, idade} = pessoa;/
+console.log(nome, sobrenome, idade);
+
+/let {nome:pessoaNome, sobrernome, idade} = pessoa;/
+console.log(pessoaNome, sobrenome, idade)
+//quando a variavel nãoao esta a definida é possivel defini-la na template
+let {nome:pessoaNome, sobrernome, idade = 0} = pessoa;
+console.log(pessoaNome, sobrenome, idade)

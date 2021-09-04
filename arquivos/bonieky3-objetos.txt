@@ -1,0 +1,54 @@
+html
+css
+js
+let carros = ['Palio', 'Uno', 'Corolla', 'Ferrari'];
+//para acessar um item especifico do array
+console.log(carros[2]);
+->'Corolla'
+
+//criando funções dentro de um array
+let carros = [
+'Palio', 
+'Monza',
+'Fusca',
+'Kadett',
+function(){
+console.log('Testando 1, 2, 3...')
+}
+];
+carros[4]();
+->'Testando 1, 2, 3...'
+
+//criando arrays dentro de arrays
+let ingredientes = [
+['uva', 'pera', 'maça'],
+['arroz', 'macarrão]
+];
+console.log(ingredientes[1][0]);
+->'arroz'
+
+objetos
+let carro = {
+nome:'Fiat',
+modelo:'Uno',
+peso:'800kg',
+ligado:false,
+ligar:function(){
+this.ligado = true;
+console.log("VRUM VRUM!")
+}
+acelerar:function(){
+if(this.ligado == true)
+console.log("Riiiiiihih")
+} else {
+console.log(this.nome+""+this.modelo+" não está ligado!")
+}
+};
+console.log("Modelo: "+carro.modelo);
+console.log(carro['nome']);
+console.log(carro.nome);
+carro.ligar();
+->VRUM VRUM
+carro.alecerar();
+->Riiiiiihih
+document.getElementById("titulo").style.display = "block";

@@ -1,0 +1,40 @@
+boniecky
+
+function trocar(){
+if(document.querySelector('button').classList.contains('preto')){
+document.querySelector('button').classList.remove('preto');
+document.querySelector('button').classList.add('verde');
+} else {
+document.querySelector('button').classList.remove('verde');
+document.querySelector('button').classList.add('preto');
+}
+}
+
+//para ver o tipo da variavel
+typeof 
+	
+for (var i = 0; i < clubes.length; i++){
+      itemSorteado = parseInt(Math.random() * clubes.length)
+      
+    if (itemSorteado == itemJaSorteado[i]){
+      	
+	return;
+      
+    }else{
+        confronto0.innerHTML = `${clubes[itemSorteado].clube} Vs`
+        itensJaSorteados.
+         console.log(itemSorteado)
+	}
+    }
+
+
+function trocarImagem (filename, animalname){
+document.querySelector('.imagem').setAtribute('src','imagem/' + filename);
+document.querySelector('.imagem').setAtribute('data-animal',  animalname);
+}
+
+function pegarAnimal(){
+let animal = document.querySelector('.imagem').getAttribute('data-animal);
+}
+
+

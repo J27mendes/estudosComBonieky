@@ -1,0 +1,23 @@
+//operador spread serve para a complementar 
+//um array ou um objeto. usando os ...e o nome do array ou objeto
+
+let numeros = [1, 2, 3, 4];
+let outros = [...numeros, 5, 6, 7, 8];
+
+console.log(outros);
+
+
+let info = {
+nome: 'Bonieky',
+sobrernome: 'Lacerda',
+idade:99
+};
+
+let novaInfo = {
+...info,
+cidade: 'Cidade Grande',
+estado: 'Praíba',
+pais: 'Brasil'
+};
+
+console.log(novaInfo);

@@ -1,0 +1,23 @@
+//operador rest usa os 3 pontos ...
+//para adicionar todos os itens passados, transformando em um array em
+//um parametro
+function adicionar(...numeros){
+console.log(numeros)
+}
+
+adicionar(5, 6, 7, 8, 9, 10);
+
+-> [5, 6, 7, 8, 9, 10]
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+function adicionar(nomes, ...novosNomes){
+
+let novoConjunto = [
+... nomes,
+.novosNomes
+];
+
+let nomes = ["Bonieky", "Paulo"];
+let outros= adicionar(nomes, "Antônio", "Maria", "José");
+
+console.log(outros);

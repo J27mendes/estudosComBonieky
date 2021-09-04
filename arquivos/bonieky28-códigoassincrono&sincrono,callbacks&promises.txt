@@ -1,0 +1,51 @@
+//codigo sincrono 
+let nome = "jose";
+let sobrenome = "maria";
+let completo = nome+ " "+sobrenome;
+
+//codigo assincrono
+let nome = "jose";
+let sobrenome = "maria";
+let temperatura = maquininha.pegarTemperatura();// linha assincorna
+let completo = nome+ " "+sobrenome;
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+//callback é uma função que se manda para executar depois
+
+function alertar() {
+console.log("opa, tubo bem?");
+}
+let nome = "Bonieky";
+setTimeout(alertar, 2000);
+let sobrenome = "lacerda";
+console.log("nome completo = "+nome+ ' '+sobrenome);
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'--'-'-'-'-'-'-'-'-'
+
+//promises é exatamente uma promessa de que 
+// ou a promessa vai acontecer
+//ou não vai acontecer
+//ou vai dar um erro
+
+function pegarTemperatura(){
+ return new Promise(function(resolve,reject){
+console.log("pegando a temperatura...");
+
+ setTimeout(function(){
+ resolve('40 na sombra');
+}, 2000);
+});
+}
+
+//usando a promise
+
+let temp = pegarTemperatura();
+temp.then(function(resultado){
+ console.log("Temperatura: "+resultado);
+});
+
+temp.catch(function(error){
+ console.log("Eita, deu errado!");
+});
+
+

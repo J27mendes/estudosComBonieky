@@ -1,0 +1,221 @@
+http://www.alfamidia.com.br/c/php/portalAlfa.aspx 
+//eventos de teclado
+
+<input onkeyup="digitou(event)" id="campo" type="text" name="usuario value="Nome">
+js 
+function digitou(e){
+if(e.keyCode == 13){//Enter
+let texto = document.getElementById("campo").value
+}
+
+function digitou(e){
+if(e.keyCode == 13 && e.ctrlKey == true){//control enter pressionado
+ let texto = document.getElementById("campo").value;
+ }
+}
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'--'-'-'-'-'-'-'-'
+
+let lista = ['Ovo, 'Farinha', Corante', 'Massa'];
+let res = lista;
+console.log(res);
+->['Ovo, 'Farinha', 'Corante', 'Massa'];
+
+let res = lista.toString()
+console.log(res);
+->Ovo,Farinha,Corante,Massa
+
+let res = lista.join('-');
+console.log(res);
+//o item posto como parametro é inserido entre os itens do array
+->Ovo-Farinha-Corante-Massa
+
+let res = lista.indexOF('Corante');
+console.log(res);
+//retorna a posição do parametro no array se não encontrar retorna -1
+->2
+
+let lista = ['Ovo, 'Farinha', Corante', 'Massa'];
+-'-'-'--'-'-'--'-'-'-'-'-'-'-'-'-'-'-'
+
+lista.pop();
+let res = lista;
+console.log(res);
+//remove o ultimo item do array
+'Ovo, 'Farinha', Corante'
+
+'Farinha', Corante', 'Massa'
+//remove o primeiro item do array
+'Farinha', Corante', 'Massa'
+
+let lista = ['Ovo, 'Farinha', Corante', 'Massa'];
+lista.push('leite');
+let res = lista;
+console.log(res);
+->['Ovo, 'Farinha', Corante', 'Massa',' leite'];
+
+-'-'-'-'-'--'-'-'-'-'-'-'-'-'-'-'-'-'-'-
+
+let lista = ['Ovo, 'Farinha', Corante', 'Massa'];
+let res = lista;
+console.log(res);
+->['Ovo, 'Farinha', 'Corante', 'Massa'];
+
+let res = lista.toString()
+console.log(res);
+->Ovo,Farinha,Corante,Massa
+
+let res = lista.join('-');
+console.log(res);
+//o item posto como parametro é inserido entre os itens do array
+->Ovo-Farinha-Corante-Massa
+
+let res = lista.indexOF('Corante');
+console.log(res);
+//retorna a posição do parametro no array se não encontrar retorna -1
+->2
+
+let lista = ['Ovo, 'Farinha', Corante', 'Massa'];
+lista.pop();
+let res = lista;
+console.log(res);
+//remove o ultimo item do array
+'Ovo, 'Farinha', Corante'
+
+'Farinha', Corante', 'Massa'
+//remove o primeiro item do array
+'Farinha', Corante', 'Massa'
+
+let lista = ['Ovo, 'Farinha', Corante', 'Massa'];
+lista.push('leite');
+let res = lista;
+console.log(res);
+->['Ovo, 'Farinha', Corante', 'Massa',' leite'];
+
+
+
+-'-'--'-'-'-'-'-'-'-'-'-'-'-'-'-'--''-'-'
+
+let lista = ['Ovo', 'Farinha', 'Corante' , 'Massa']
+//remove o item do arra, o primeiro parametro indica a posição inicial e o 
+segundo indica a quantidade.
+//colocando apenas 1 parametro o splice remove todos os elementos apartir
+do item indicado
+lista.splice(1, 1);
+
+let res = lista;
+
+console.log(res);
+->'Ovo', 'Corante' , 'Massa'
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'
+let lista = ['Ovo', 'Farinha', 'Corante' , 'Massa']
+let lista2 = ['Prato', 'Liquidificador', 'Forno']
+//o concat é usado para unir os itens de arrays diferentes 
+let res = lista.concat(lista2)
+
+console.log(res);
+->['Ovo', 'Farinha', 'Corante' , 'Massa', 'Prato', 'Liquidificador', 'Forno']
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'
+
+let lista = ['Ovo', 'Farinha', 'Corante' , 'Massa']
+//sort é usado para ordenar um array
+let res = lista.sort();
+console.log(res);
+->'Corante', 'Farinha', 'Massa', 'Ovo' 
+//rever é para inverter a ordem do array
+let res = lista.reverse();
+console.log(res);
+->'Ovo','Massa','Farinha','Corante'
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+
+let lista = [45, 4, 9, 16, 25];
+let lista2 = [];
+
+for(let i in lista){
+lista2.push(lista[i] * 2);
+}
+let res = lista2;
+console.log(res);
+-> 90, 8, 18, 32, 50
+//o metodo map mapeia o array como um for
+lista2 = lista.map(function(item)){
+return item * 2;
+});
+let res = lista2;
+console.log(res);
+-> 90, 8, 18, 32, 50
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+let lista = [45, 4, 9, 16, 25];
+let lista2 = [];
+// o metodo filter serve como um filtro que percorre o array
+lista2 = lista.filter(function(item){
+if(item < 20){
+return true;
+} else {
+return false;
+ }
+});
+
+let res = lista2
+console.log(res);
+->4, 9, 16
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'
+
+let lista = [45, 4, 9, 16, 25];
+let lista2 = [];
+// o metodo every serve para percorrer o array mas 
+só retorna true ou false
+if(item < 20){
+return true;
+} else {
+return false;
+ }
+});
+
+let res = lista2
+console.log(res);
+
+-'-'-'-'-'-'-'-'-'-'-'--'-'-'-'-'-'-'-
+
+let lista = [45, 4, 16, 25];
+let lista2 = [];
+// percorre e retorna o item procurado
+let2 = lista.find(function(item){
+return (item == 16) ? true : false;
+});
+
+let res = lista2;
+
+console.log(res);
+-> 16
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+//percorre e retorna a posição do item procurado
+let2 = lista.findIndex(function(item){
+return (item == 16) ? true : false;
+});
+
+let res = lista2;
+
+console.log(res);
+->2
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+let lista = [
+{id:1, nome:'Bonieky', sobrenome:'Lacerda'},
+{id:2, nome:'Paulo', sobrenome:'xyz'},
+{id:3, nome:'Jessy', sobrenome:'Silva'},
+];
+
+let pessoa: lista.find(function(item){
+return(item.id == 3) ? true : false;
+});
+
+let res = pessoa;
+console.log(res);
+->{id:3, nome:'Jessy', sobrenome:'Silva'}
+
+

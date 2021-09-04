@@ -1,0 +1,25 @@
+let n = 10
+let res = n;
+console.log(res);
+->10
+let res = n.toString();
+console.log(res);
+//retorna o numero como uma string
+->10 
+
+let n = 10.265874546548
+let res = n.toFixed(2);
+console.log(res);
+//retorna a quantidade de casas decimais estipulada no paramentro
+-> 10.26
+
+let n = "25";
+let res = parseInt(n) + 5;
+console.log(res);
+//o metodo parseInt transforma string em number
+
+let n = "25.9";
+let res = parseFloat(n) + 5.1;
+console.log(res);
+//o metodo parseFloat transforma string em number e preserva todos os decimais
+->31

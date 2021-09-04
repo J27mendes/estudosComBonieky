@@ -1,0 +1,59 @@
+let d = new Date();
+
+console.log(d.toDateString());
+->sexta-feira julho 09 2021
+
+console.log(d.toUTCString());
+// retorna o horario oficial de greenwich
+->sexta-feira 09 julho 2021 19:13:47 GMT
+
+console.log(d.toString());
+-> sexta-feira julho 09 2021 19:17:43 GMT-0300 (Horário Padrão de Brasília)
+// é possivel dedeifinir datas como parametros 
+let d = new Date("2020, 01, 25");
+-'-'-'-'-'-'-'-'-'-'-'-'-'
+let d = new Date();
+//retorna o ano atual
+let novoValor = d.getFullYear();
+//retorna o mes atual
+*obs.* todos os meses no JS começam apartir do 0 ex. 
+fevereiro = 1
+let novoValor = d.getMonth();
+//retorna o dia da semana
+*obs.* a semana começa no domingo = 0 ...
+portanto a semana tem 6 dias
+let novoValor = d.getDat();
+//retorna o dia atual
+let novoValor = d.getDate();
+//retorna a hora atual
+let novoValor = d.getHours();
+console.log(novoValor)
+//retorna os minutos
+let novoValor = d.getMinutes();
+//retorna os segundos
+let novoValor = d.getSeconds();
+//retorna os millisegundos;
+let novoValor = d.getMilliseconds();
+//retorna a quantidade de millisegundos que se passaram
+desde o ano de 1970
+Let novoValor = d.getTime();
+-'-'-'-'-'-'-'-'-'-'-'-'
+let d = new Date();
+//o metodo set serve para alterar 
+d.setFullYear(2022);
+let novoValor = d;
+
+//este metodo altera a data aumentando a quantidade de dias
+d.setDate(d.getDate() + 5)
+let novoValor = d;
+console.log(novoValor);
+->sexta-feira 14 julho 2021 19:13:47 GMT
+
+d.setHours(d.getHours() + 23);
+let novoValor = d;
+
+
+
+
+
+

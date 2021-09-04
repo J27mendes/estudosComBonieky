@@ -1,0 +1,34 @@
+//o metodo entries funciona retornando o array 
+//e passando o index de cada item desse array
+
+let lista = [ "ovo", "feijão", " arroz", "pipoca"];
+console.log(Object.keys(lista);
+->["1", "2", "3", "4"];
+
+console.log(Object.values(lista);
+->[ "ovo", "feijão", " arroz", "pipoca"]
+
+console.log(Object.entries(lista));
+->[Array(2), Array(2), Array(2), Array(2),]
+0:"0"
+1:"ovo"
+
+etc...
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+let pessoa= {
+nome:"Bonieky",
+sobrenome:"Lacerda",
+idade:90
+};
+//o metodo keys retorna um array com todas as chaves do objeto
+console.log(Object.keys(pessoa));
+->[nome, sobrenome, idade]
+//o metodo values retorna todos os valores do objeto
+console.log(Object.values(pessoa));
+->["Bonieky", "Lacerda",90]
+console.log(Object.entries(pessoa));
+[Array(2), Array(2), Array(2),]
+0:(2) ["nome", "Bonieky"]
+1:(2) ["sobrenome", "Lacerda"]
+2:(2) ["idade", 90]

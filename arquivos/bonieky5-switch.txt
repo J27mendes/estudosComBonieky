@@ -1,0 +1,81 @@
+js
+let dia = 3;
+diaNome = "";
+switch(dia){
+case 1:
+diaNome = "Segunda-feira";
+break;
+case 2:
+diaNome = "Terça-feira";
+break;
+case 3:
+diaNome = "Quarta-feira";
+break;
+case 4:
+diaNome = "Quinta-feira";
+break;
+case 5:
+diaNome = "Sexta-feira";
+break;
+case 6:
+diaNome = "Sábado";
+break;
+case 7:
+diaNome = "Domingo";
+break;
+}
+
+
+-'-'-'-'-'-'-'-'-'-'-'-
+switch(dia){
+case 6:
+case 7:
+diaNome = "Final de Semana";
+break;
+default:
+diaNome = "Dia de Semana";
+}
+
+document.getElementById("dia").innerHTML = "Hojé é: " + diaNome;
+
+-'-'-'-'-'-'-'-'-'-'-'-'
+//for loop
+//for loop array
+
+let texto = "";
+
+for (let i = 1; i <= 50; i++){
+texto = texto + i + "<br/>";
+}
+document.getElemetById("demo").innerHTML = texto;
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+let carros = ['Ferrari', Fusca', 'Palio', 'Corolla', 'Vectra'];
+
+let html = '<ul>';
+
+for (let i in carros) {
+html += '<li>' + carros[i] + '</li>';
+}
+html += '</ul>';
+document.getElementById("demo").innerHTML = html;
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-
+let html = "";
+let c = 10;
+while(c <= 10){
+html += "Número: "+c+"<br>";
+c++
+}
+document.getElementById("demo").innerHTML = html;
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+//selecionando querySelector apartir de elementos css
+EX:.
+document.querySelector('ol.lista');
+document.querySelector('#titulo').innerHTML = 'MUDANDO O TEXTO';
+let lista = document.querySelectorAll('li');
+for(let i in lista){
+lista[i].style.color = '#ff0000';
+}
+document.querySelector('body').style.color = '#00ff00';
+html

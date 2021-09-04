@@ -1,0 +1,134 @@
+<img src="imagens/cachorro.jpg" data-animal=""class="imagem"/>
+
+<button onclick="trocarImagem('cachorro.jpg', 'Cachorro')">Cachorro</button>
+<button onclick="trocarImagem('gato.jpg','Gato')">Gato</button>
+
+
+script.js
+function trocarImagem(filename){
+document.querySelector('.imagem').setAttribute('src', 'imagens/'+filename);
+document.querySelector('.imagem').setAttribute('data-animal, animalname);
+}
+
+function pegarAnimal(){
+let animal = document.querySelector('imagem').getAttribute('data-animal');
+alert("o animal é: "+animal);
+}
+
+--'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+
+
+css
+.texto{
+width: 200px;
+height: 200px;
+overflow:auto;
+background-color: #ccc;
+padding: 20px;
+border: 2px solid #ff0000;
+}
+
+html
+<div class="texto">Lorem ipsum dolor sit 
+amet, consectetur adipiscing elit, sed 
+do eiusmod tempor incididunt ut labore 
+et dolore magna aliqua. Ut enim ad minim 
+veniam, quis nostrud exercitation ullamco 
+laboris nisi ut aliquip ex ea commodo 
+consequat. Duis aute irure dolor in 
+reprehenderit in voluptate velit esse 
+cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non 
+proident, sunt in culpa qui officia 
+deserunt mollit anim id est laborum.
+</div>
+
+document.querySelector('.texto').offsetHeight
+document.querySelector('.texto').offsetWidth
+document.querySelector('.texto').clientWidth
+document.querySelector('.texto').clientHeight
+document.querySelector('.texto').scrollHeight
+document.querySelector('.texto').scrollWidth
+
+-'-'-'-'-'-'-'-'-'-'-'-'-'
+css
+.scrollbutton {
+width:40px;
+height:40px;
+border-radius:15px;
+background-color:#ff0000;
+position:fixed;
+right:20px;
+bottom:20px;
+z-index:999;
+cursor:pointer;
+/*display:none*/ //para iniciar com o botão oculto
+}
+
+<div onclick="subirTela()" class"scrollbutton"></div>
+//para mover o scroll
+document.querySelector
+function subirTela(){
+window.scrollTo({
+top:0,
+left:0,
+behavior: 'smooth'
+});
+}
+
+function decidirBotaoScroll(){
+if(window.scrolly===0){
+//ocultar o botão
+document.querySelector('.scrollbutton').style.display = 'none;
+} else {
+//mostrar o botão
+document.querySelector('.scrollbutton').style.display = 'block';
+}
+}
+//verifica a função de 1 em 1 segundo
+setInterval(decidirBotaoScroll, 1000);
+
+window.addEventListener('scroll, decidirBotaoScroll);
+
+-'-'-'-'-'
+js 
+function digitou(e){
+if(e.keyCode == 13 && e.ctrlKey == true){
+let texto = document.getElementById("campo").value;
+}
+}
+html
+<input onKeyup="digitou(event)">
+onclick()
+onmouseover();
+onmouseout()
+onkeydown()
+onkeyup()
+js
+function clicou(){
+document.getElementById("titulo").innerHTML = "Obrigado!";
+}
+KeyboardEvent
+>
+\/
+--'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-
+function azul(){
+limpar();
+document.getElementById("titulo").classList.add('azul');
+}
+
+function vermelho(){
+limpar();
+document.getElementById("titulo").classList.add('vermelho');
+}
+
+function verde(){
+limpar();
+document.getElementById("titulo").classList.add('verde');
+}
+
+function limpar(){
+document.getElementById("titulo").classList.remove('azul');
+document.getElementById("titulo").classList.remove('vermelho');
+document.getElementById("titulo").classList.remove('verde');
+}

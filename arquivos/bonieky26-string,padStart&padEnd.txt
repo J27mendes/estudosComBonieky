@@ -1,0 +1,18 @@
+//está função padEnd é usada para preencher apartir do final de uma string
+//com o minimo de itens que for declarado como parametro e 
+//completado com o segundo parametro usado 
+
+let telefone = "562"
+console.log(telefone.padEnd(9, "*"))
+->562******
+
+//e o padStart tem a mesma utilidade só que preenche antes do primeiro item
+console.log(telefone.padStart(9,"-"));
+->------562
+
+let cartao = "1234567887654321";
+let lastDigits = cartao.slice(-4);
+let cartaoMascarado = lastDigits.padStart(16, "*");
+
+console.log("Este é o seu cartão?" + cartaoMascarado);
+->************4321

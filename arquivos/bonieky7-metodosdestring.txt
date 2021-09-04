@@ -1,0 +1,62 @@
+HTML
+<DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>curso de JavaScript</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<h1 id="titulo">Seja bem vindo(a)</h1>
+<div class="demo"></div>
+<script src="script.js"></script>
+</body>
+</html>
+css
+js
+let nome = 'Bonieky Lacerda Leal';
+//procurando string, retorna a posição que a string se encontra
+let resultado = nome.indexOf('L');
+console.log(resultado);
+-> 8
+// se não encontrar retorna -1
+
+ex:.
+let nome = "Jessé Mendes da Silva";
+let resultado = "";
+
+if (nome.indexOf('Silva') > -1 {
+resultado = 'Achou!';
+} else {
+resultado = 'Não achou!';
+}
+console.log(resultado);
+
+-'-'-'-'-'-'-'-'-'-'--'-'-'-'-'-'-'-'
+
+let nome = 'Bonieky Lacerda Leal';
+
+let resultado = nome.slice(0, 10);
+
+//primeiro parametro pega a posição inicial
+//segundo parametro indica até aonde vai pegar 
+
+console.log('resultado');
+->Bonieky La
+//colocando só 1 parametro ele pega a posição inicial em diante
+//colocando o parametro negativo pega a string do fim para o começo
+
+let resultado = nome.substring();
+//tem as mesmas propriedades do slice exceto o de pegar a string com
+um numero negativo
+let resultado = nome.substr(8, 3);
+//primeiro parametro pega a posição inicial
+//segundo parametro pega a quantidade de caracteres
+//tb pode ser usado com parametros negativos
+console.log('resultado')
+->Lac
+ 
+
+

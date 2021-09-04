@@ -1,0 +1,30 @@
+let info = ["Bonieky Lacerda", "Mickey", "Pateta", " Pluto"];
+
+let [nomeCompleto, disney1, disney2, disney3] = info;
+
+console.log(nomeCompleto, disney1, disney2, disney3);
+->Bonieky Lacerda, Mickey, Pateta, Pluto
+-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'-'
+let [nomeCompleto, , , disney3] = info;
+console.log(nomeCompleto, disney1, disney2, disney3);
+->Bonieky Lacerda, Pluto
+-'-'-'-'-'-'-'-'-'-'-'-'-'
+function criar(){
+let a = [1, 2, 3];
+return a;
+}
+ let numeros = criar();
+let [a, b, c] = numeros;
+console.log(a,b,c);
+
+-\-\-\-\-\-\-\-\-\-\-\-\-\-\
+function criar(){
+return [1, 2, 3];
+}
+ let [a, b, c] = criar();
+ console.log(a,b,c);
+
+-'-'-'-'-'-'-'-'-'-'-'-'
+let [numeros, numerosa, numerosb] = [1, 2, 3]
+
+console.log(numeros, numerosa, numerosb);

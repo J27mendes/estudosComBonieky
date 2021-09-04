@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>curso dede JavaScript</title>
+<link rel="stylesheet" href="style.css">
+<head>
+<body>
+<h1 id="titulo">Seja bem-vindo <h1>
+
+<aside>
+<div id="menu-opener" onclick="menuToggle()"></div>
+<img src="menu.png" width="36">
+<div id="menu-area" glass="menu-opened">
+<ul>
+<li> HOME </li>
+<li> Sobre </li>
+<li> Contato </li>
+</ul>
+</div>
+<aside>
+<script src ="scrpt.js"></script>
+
+</body>
+</html>
+css
+js
+function menuToggle(){
+let menuArea = document.getElementById("menu-area");
+if(menuArea.classList.contains("menu-opened") == true){
+menuArea.classList.remove("menu-opened");
+} else {
+menuArea.classList.add("menu-opened");
+}
+
+ou
+//usando diretamente pelo css
+if(menuArea.style.width == '200px'){
+menuArea.style = '0px';
+} else {
+menuArea.stle.wdth = '200px';
+}
